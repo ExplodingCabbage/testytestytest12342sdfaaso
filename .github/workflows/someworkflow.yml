@@ -1,0 +1,16 @@
+run-name: testy test test
+on: push
+concurrency:
+  group: ${{ github.workflow }}
+jobs:
+  blablabla:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      # - name: Update npm
+      #   run: npm install -g npm@11
+      - run: |
+          echo Node version:
+          node --version
+          echo npm version:
+          npm --version

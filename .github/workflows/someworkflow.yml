@@ -6,8 +6,8 @@ jobs:
   blablabla:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout
-      - uses: actions/setup-node
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
       - name: Update npm
         run: npm install -g npm@latest
       - run: |

@@ -7,8 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      # - name: Update npm
-      #   run: npm install -g npm@11
+      - name: Update npm
+        run: npm install -g npm
       - run: |
           echo Node version:
           node --version
